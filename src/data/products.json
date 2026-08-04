@@ -7,7 +7,7 @@
     "category": "Cognitive",
     "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=600&fit=crop",
     "featured": true,
-    "stock": 48,
+    "stock": 49,
     "benefits": ["Enhanced focus", "Memory support", "Mental clarity", "Reduced brain fog"],
     "ingredients": ["Lion's Mane Extract", "Bacopa Monnieri", "Rhodiola Rosea", "L-Theanine", "Citicoline"]
   },
