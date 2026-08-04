@@ -3,7 +3,6 @@
 import {
   AppBar,
   Toolbar,
-  Typography,
   Button,
   IconButton,
   Badge,
@@ -20,6 +19,7 @@ import {
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import MenuIcon from '@mui/icons-material/Menu';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useCart } from '@/context/CartContext';
 import { useState } from 'react';
 import CartDrawer from './CartDrawer';
@@ -74,34 +74,19 @@ export default function Header() {
             >
               <Box
                 sx={{
-                  width: 40,
-                  height: 40,
-                  borderRadius: '50%',
-                  background: 'linear-gradient(135deg, #0d7377 0%, #2e8b57 100%)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  mr: 1.5,
-                  color: 'white',
-                  fontWeight: 800,
-                  fontSize: '1.1rem',
+                  position: 'relative',
+                  height: { xs: 40, md: 48 },
+                  width: { xs: 150, md: 180 },
                 }}
               >
-                B
+                <Image
+                  src="/logo.png"
+                  alt="Biobuilt Sciences"
+                  fill
+                  style={{ objectFit: 'contain' }}
+                  priority
+                />
               </Box>
-              <Typography
-                variant="h6"
-                sx={{
-                  fontWeight: 700,
-                  background: 'linear-gradient(135deg, #0d7377 0%, #2e8b57 100%)',
-                  backgroundClip: 'text',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  letterSpacing: '-0.02em',
-                }}
-              >
-                Biobuilt Sciences
-              </Typography>
             </Box>
 
             {!isMobile && (
@@ -139,6 +124,16 @@ export default function Header() {
         onClose={() => setMobileOpen(false)}
       >
         <Box sx={{ width: 260, pt: 2 }}>
+          <Box sx={{ px: 2, pb: 2, display: 'flex', justifyContent: 'center' }}>
+            <Box sx={{ position: 'relative', height: 50, width: 180 }}>
+              <Image
+                src="/logo.png"
+                alt="Biobuilt Sciences"
+                fill
+                style={{ objectFit: 'contain' }}
+              />
+            </Box>
+          </Box>
           <List>
             {navItems.map((item) => (
               <ListItem key={item.href} disablePadding>
