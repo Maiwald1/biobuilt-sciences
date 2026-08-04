@@ -1,0 +1,98 @@
+[
+  {
+    "id": "bb-001",
+    "name": "NeuroForge Complex",
+    "description": "Advanced nootropic blend designed to support cognitive function, focus, and mental clarity. Features patented compounds for enhanced bioavailability.",
+    "price": 79.99,
+    "category": "Cognitive",
+    "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=600&fit=crop",
+    "featured": true,
+    "stock": 48,
+    "benefits": ["Enhanced focus", "Memory support", "Mental clarity", "Reduced brain fog"],
+    "ingredients": ["Lion's Mane Extract", "Bacopa Monnieri", "Rhodiola Rosea", "L-Theanine", "Citicoline"]
+  },
+  {
+    "id": "bb-002",
+    "name": "Cellular Renew NAD+",
+    "description": "Premium NAD+ precursor formula to support cellular energy production, healthy aging, and mitochondrial function.",
+    "price": 89.99,
+    "category": "Longevity",
+    "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=600&fit=crop",
+    "featured": true,
+    "stock": 32,
+    "benefits": ["Cellular energy", "Healthy aging", "Mitochondrial support", "DNA repair pathways"],
+    "ingredients": ["Nicotinamide Riboside", "TMG", "Resveratrol", "Pterostilbene", "Quercetin"]
+  },
+  {
+    "id": "bb-003",
+    "name": "GutBiome Probiotic+",
+    "description": "Multi-strain probiotic with prebiotic fiber and digestive enzymes for optimal gut health and immune support.",
+    "price": 54.99,
+    "category": "Gut Health",
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=600&fit=crop",
+    "featured": true,
+    "stock": 65,
+    "benefits": ["Digestive balance", "Immune support", "Nutrient absorption", "Microbiome diversity"],
+    "ingredients": ["50 Billion CFU Blend", "Inulin Prebiotic", "Digestive Enzymes", "L-Glutamine"]
+  },
+  {
+    "id": "bb-004",
+    "name": "MitoCharge ATP Boost",
+    "description": "Science-backed formula to enhance mitochondrial efficiency and natural energy production without stimulants.",
+    "price": 64.99,
+    "category": "Energy",
+    "image": "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&h=600&fit=crop",
+    "featured": false,
+    "stock": 41,
+    "benefits": ["Sustained energy", "Reduced fatigue", "Exercise performance", "Cellular vitality"],
+    "ingredients": ["CoQ10 (Ubiquinol)", "PQQ", "Acetyl-L-Carnitine", "Alpha Lipoic Acid", "Magnesium"]
+  },
+  {
+    "id": "bb-005",
+    "name": "ImmuneForge Advanced",
+    "description": "Comprehensive immune support system with vitamins, minerals, and botanical extracts for year-round resilience.",
+    "price": 49.99,
+    "category": "Immune",
+    "image": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=600&fit=crop",
+    "featured": false,
+    "stock": 78,
+    "benefits": ["Immune resilience", "Antioxidant protection", "Seasonal support", "Cellular defense"],
+    "ingredients": ["Vitamin D3 + K2", "Zinc Bisglycinate", "Elderberry Extract", "Vitamin C", "Selenium"]
+  },
+  {
+    "id": "bb-006",
+    "name": "Sleep Architecture Complex",
+    "description": "Clinically inspired formula to promote deep, restorative sleep and healthy circadian rhythm without next-day grogginess.",
+    "price": 44.99,
+    "category": "Sleep",
+    "image": "https://images.unsplash.com/photo-1541781777929-9e49c9e0a0c5?w=600&h=600&fit=crop",
+    "featured": true,
+    "stock": 53,
+    "benefits": ["Deeper sleep", "Faster sleep onset", "Circadian support", "Morning refreshment"],
+    "ingredients": ["Magnesium Glycinate", "Apigenin", "L-Theanine", "Glycine", "Tart Cherry Extract"]
+  },
+  {
+    "id": "bb-007",
+    "name": "JointForge Collagen+",
+    "description": "Hydrolyzed collagen peptides combined with hyaluronic acid and botanical extracts for joint comfort and mobility.",
+    "price": 59.99,
+    "category": "Recovery",
+    "image": "https://images.unsplash.com/photo-1559757175-5700dde67548?w=600&h=600&fit=crop",
+    "featured": false,
+    "stock": 37,
+    "benefits": ["Joint comfort", "Mobility support", "Connective tissue", "Skin elasticity"],
+    "ingredients": ["Type I & III Collagen", "Hyaluronic Acid", "Boswellia Serrata", "Turmeric Extract", "Vitamin C"]
+  },
+  {
+    "id": "bb-008",
+    "name": "Hormone Balance Elite",
+    "description": "Targeted botanical and nutrient complex designed to support healthy hormone metabolism and endocrine balance.",
+    "price": 69.99,
+    "category": "Hormonal",
+    "image": "https://images.unsplash.com/photo-1576671081837-49000212a370?w=600&h=600&fit=crop",
+    "featured": false,
+    "stock": 29,
+    "benefits": ["Hormone metabolism", "Stress resilience", "Energy balance", "Mood support"],
+    "ingredients": ["Ashwagandha KSM-66", "DIM", "Maca Root", "Vitamin B6", "Zinc"]
+  }
+]
