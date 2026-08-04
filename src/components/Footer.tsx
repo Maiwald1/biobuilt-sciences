@@ -31,7 +31,7 @@ export default function Footer() {
               }}
             >
               <Image
-                src="/logo.png"
+                src="/logo.svg"
                 alt="Biobuilt Sciences"
                 fill
                 style={{ objectFit: 'contain', objectPosition: 'left' }}

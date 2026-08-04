@@ -80,7 +80,7 @@ export default function Header() {
                 }}
               >
                 <Image
-                  src="/logo.png"
+                  src="/logo.svg"
                   alt="Biobuilt Sciences"
                   fill
                   style={{ objectFit: 'contain' }}
@@ -127,7 +127,7 @@ export default function Header() {
           <Box sx={{ px: 2, pb: 2, display: 'flex', justifyContent: 'center' }}>
             <Box sx={{ position: 'relative', height: 50, width: 180 }}>
               <Image
-                src="/logo.png"
+                src="/logo.svg"
                 alt="Biobuilt Sciences"
                 fill
                 style={{ objectFit: 'contain' }}
