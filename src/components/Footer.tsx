@@ -2,6 +2,7 @@
 
 import { Box, Container, Typography, Stack, Link as MuiLink } from '@mui/material';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -21,19 +22,21 @@ export default function Footer() {
           justifyContent="space-between"
         >
           <Box>
-            <Typography
-              variant="h6"
-              fontWeight={700}
+            <Box
               sx={{
-                background: 'linear-gradient(135deg, #4fd1c5 0%, #68d391 100%)',
-                backgroundClip: 'text',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                mb: 1,
+                position: 'relative',
+                height: 56,
+                width: 200,
+                mb: 1.5,
               }}
             >
-              Biobuilt Sciences
-            </Typography>
+              <Image
+                src="/logo.png"
+                alt="Biobuilt Sciences"
+                fill
+                style={{ objectFit: 'contain', objectPosition: 'left' }}
+              />
+            </Box>
             <Typography variant="body2" sx={{ maxWidth: 280, opacity: 0.7 }}>
               Science-backed formulations for cognitive performance, longevity, and cellular health.
             </Typography>
