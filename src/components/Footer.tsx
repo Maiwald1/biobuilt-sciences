@@ -1,87 +1,42 @@
 'use client';
 
-import { Box, Container, Typography, Stack, Link as MuiLink } from '@mui/material';
+import { Box, Container, Typography, Stack, Link as MuiLink, Divider } from '@mui/material';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <Box
-      component="footer"
-      sx={{
-        bgcolor: '#0a2e2c',
-        color: 'rgba(255,255,255,0.85)',
-        py: 6,
-        mt: 'auto',
-      }}
-    >
+    <Box component="footer" sx={{ bgcolor: '#0f2740', color: 'rgba(255,255,255,0.88)', py: 7, mt: 'auto' }}>
       <Container maxWidth="lg">
-        <Stack
-          direction={{ xs: 'column', md: 'row' }}
-          spacing={4}
-          justifyContent="space-between"
-        >
+        <Stack direction={{ xs: 'column', md: 'row' }} spacing={5} justifyContent="space-between">
           <Box>
-            <Box
-              sx={{
-                position: 'relative',
-                height: 56,
-                width: 200,
-                mb: 1.5,
-              }}
-            >
-              <Image
-                src="/logo.svg"
-                alt="Biobuilt Sciences"
-                fill
-                style={{ objectFit: 'contain', objectPosition: 'left' }}
-              />
-            </Box>
-            <Typography variant="body2" sx={{ maxWidth: 280, opacity: 0.7 }}>
-              Science-backed formulations for cognitive performance, longevity, and cellular health.
+            <Box component="img" src="/logo.png" alt="Biobuilt Science" sx={{ height: 44, width: 'auto', display: 'block', mb: 2, filter: 'brightness(0) invert(1)' }} />
+            <Typography variant="body2" sx={{ maxWidth: 320, opacity: 0.75 }}>
+              Built on science. Driven by innovation.
             </Typography>
           </Box>
-
           <Box>
-            <Typography variant="subtitle2" fontWeight={600} gutterBottom>
-              Shop
-            </Typography>
-            <Stack spacing={0.5}>
-              <MuiLink component={Link} href="/shop" color="inherit" underline="hover" sx={{ opacity: 0.7 }}>
-                All Products
-              </MuiLink>
-              <MuiLink component={Link} href="/shop?category=Cognitive" color="inherit" underline="hover" sx={{ opacity: 0.7 }}>
-                Cognitive
-              </MuiLink>
-              <MuiLink component={Link} href="/shop?category=Longevity" color="inherit" underline="hover" sx={{ opacity: 0.7 }}>
-                Longevity
-              </MuiLink>
+            <Typography variant="subtitle2" fontWeight={700} gutterBottom>Shop</Typography>
+            <Stack spacing={0.6}>
+              <MuiLink component={Link} href="/shop" color="inherit" underline="hover" sx={{ opacity: 0.75 }}>All Products</MuiLink>
+              <MuiLink component={Link} href="/shop?category=Stacks" color="inherit" underline="hover" sx={{ opacity: 0.75 }}>Research Stacks</MuiLink>
+              <MuiLink component={Link} href="/shop?category=Individual" color="inherit" underline="hover" sx={{ opacity: 0.75 }}>Individual Peptides</MuiLink>
             </Stack>
           </Box>
-
           <Box>
-            <Typography variant="subtitle2" fontWeight={600} gutterBottom>
-              Company
-            </Typography>
-            <Stack spacing={0.5}>
-              <Typography variant="body2" sx={{ opacity: 0.7 }}>
-                Research-backed formulas
-              </Typography>
-              <Typography variant="body2" sx={{ opacity: 0.7 }}>
-                Third-party tested
-              </Typography>
-              <Typography variant="body2" sx={{ opacity: 0.7 }}>
-                Made in the USA
-              </Typography>
+            <Typography variant="subtitle2" fontWeight={700} gutterBottom>Shipping</Typography>
+            <Stack spacing={0.6}>
+              <Typography variant="body2" sx={{ opacity: 0.75 }}>Free shipping on $299+</Typography>
+              <Typography variant="body2" sx={{ opacity: 0.75 }}>Fast shipping</Typography>
             </Stack>
           </Box>
         </Stack>
-
-        <Box sx={{ borderTop: '1px solid rgba(255,255,255,0.1)', mt: 4, pt: 3, textAlign: 'center' }}>
-          <Typography variant="body2" sx={{ opacity: 0.5 }}>
-            © {new Date().getFullYear()} Biobuilt Sciences. All rights reserved.
-          </Typography>
-        </Box>
+        <Divider sx={{ borderColor: 'rgba(255,255,255,0.12)', my: 4 }} />
+        <Typography variant="caption" sx={{ display: 'block', opacity: 0.55, lineHeight: 1.7, maxWidth: 860, mx: 'auto', textAlign: 'center' }}>
+          FOR RESEARCH PURPOSES ONLY — NOT FOR HUMAN OR VETERINARY USE. Products are furnished for in-vitro studies only. They are not medicines or drugs and have not been approved by the FDA to prevent, treat, or cure any condition.
+        </Typography>
+        <Typography variant="body2" sx={{ textAlign: 'center', opacity: 0.45, mt: 2.5 }}>
+          © {new Date().getFullYear()} Biobuilt Science. All rights reserved.
+        </Typography>
       </Container>
     </Box>
   );
