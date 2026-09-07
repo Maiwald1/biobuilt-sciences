@@ -7,8 +7,7 @@ export interface Product {
   image: string;
   featured?: boolean;
   stock: number;
-  benefits?: string[];
-  ingredients?: string[];
+  compounds?: string[];
 }
 
 export interface CartItem {
