@@ -8,6 +8,7 @@ export interface Product {
   featured?: boolean;
   stock: number;
   compounds?: string[];
+  benefits?: string[];
 }
 
 export interface CartItem {
