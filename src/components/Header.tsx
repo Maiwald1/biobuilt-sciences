@@ -35,7 +35,7 @@ export default function Header() {
               </IconButton>
             )}
             <Box component={Link} href="/" sx={{ display: 'flex', alignItems: 'center', mr: 4, flexGrow: isMobile ? 1 : 0 }}>
-              <Box component="img" src="/logo.svg" alt="Biobuilt Science" sx={{ height: { xs: 42, md: 52 }, width: 'auto', display: 'block' }} />
+              <Box component="img" src="/BioBuiltLOGO.png" alt="Biobuilt Science" sx={{ height: { xs: 44, md: 56 }, width: 'auto', display: 'block' }} />
             </Box>
             {!isMobile && (
               <Box sx={{ display: 'flex', gap: 0.5, flexGrow: 1 }}>
@@ -57,7 +57,7 @@ export default function Header() {
       <Drawer anchor="left" open={mobileOpen} onClose={() => setMobileOpen(false)}>
         <Box sx={{ width: 260, pt: 2 }}>
           <Box sx={{ px: 2, pb: 2 }}>
-            <Box component="img" src="/logo.svg" alt="Biobuilt Science" sx={{ height: 36, width: 'auto' }} />
+            <Box component="img" src="/BioBuiltLOGO.png" alt="Biobuilt Science" sx={{ height: 40, width: 'auto' }} />
           </Box>
           <List>
             {navItems.map((item) => (

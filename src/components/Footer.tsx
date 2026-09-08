@@ -9,7 +9,12 @@ export default function Footer() {
       <Container maxWidth="lg">
         <Stack direction={{ xs: 'column', md: 'row' }} spacing={5} justifyContent="space-between">
           <Box>
-            <Box component="img" src="/logo.svg" alt="Biobuilt Science" sx={{ height: 44, width: 'auto', display: 'block', mb: 2 }} />
+            <Box
+              component="img"
+              src="/BioBuiltLOGO.png"
+              alt="Biobuilt Science"
+              sx={{ height: 48, width: 'auto', display: 'block', mb: 2 }}
+            />
             <Typography variant="body2" sx={{ maxWidth: 320, opacity: 0.75 }}>
               Built on science. Driven by innovation.
             </Typography>
